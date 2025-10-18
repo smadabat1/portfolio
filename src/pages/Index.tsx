@@ -3,6 +3,7 @@ import About from "@/components/About";
 import TechStack from "@/components/TechStack";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
+import { TimelineDemo } from "@/components/Timeline";
 
 const Index = () => {
   return (
@@ -11,6 +12,7 @@ const Index = () => {
       <About />
       <TechStack />
       <Projects />
+      <TimelineDemo />
       <Contact />
     </div>
   );
