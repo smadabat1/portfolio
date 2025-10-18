@@ -2,12 +2,18 @@ import { Code2, Database, Smartphone, Server, Cloud, Container } from "lucide-re
 
 const TechStack = () => {
   const technologies = [
-    { name: "React", icon: Code2, color: "text-[#61DAFB]" },
-    { name: "React Native", icon: Smartphone, color: "text-[#61DAFB]" },
-    { name: "FastAPI", icon: Server, color: "text-[#009688]" },
-    { name: "PostgreSQL", icon: Database, color: "text-[#336791]" },
-    { name: "AWS", icon: Cloud, color: "text-[#FF9900]" },
-    { name: "Docker", icon: Container, color: "text-[#2496ED]" },
+    { name: "React", logo: "assets/logos/react.png" },
+    { name: "React Native", logo: "assets/logos/react-native.png" },
+    { name: "FastAPI", logo: "assets/logos/fastapi.png" },
+    { name: "PostgreSQL", logo: "assets/logos/pg.png" },
+    { name: "AWS", logo: "assets/logos/aws.png" },
+    { name: "Python", logo: "assets/logos/python.png" },
+    { name: "Docker", logo: "assets/logos/docker.png" },
+    { name: "Redis", logo: "assets/logos/redis.png" },
+    { name: "TypeScript", logo: "assets/logos/typescript.png" },
+    { name: "Tailwind CSS", logo: "assets/logos/tailwind.png" },
+    { name: "n8n", logo: "assets/logos/n8n.png" },
+    { name: "Supabase", logo: "assets/logos/supabase.png" },
   ];
 
   return (
@@ -21,11 +27,13 @@ const TechStack = () => {
           {technologies.map((tech, index) => (
             <div
               key={tech.name}
-              className="glass rounded-xl p-6 flex flex-col items-center gap-3 hover:bg-primary/5 transition-all duration-300 hover:scale-105 group"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              className="flex flex-col items-center justify-center p-4   rounded-md border border-black hover:border-primary bg-background text-white text-sm hover:shadow-[6px_6px_0px_0px_theme(colors.primary.DEFAULT)] transition duration-200"
             >
-              <tech.icon className={`h-12 w-12 ${tech.color} group-hover:scale-110 transition-transform`} />
-              <span className="text-sm font-medium text-center">{tech.name}</span>
+              <img 
+                src={tech.logo}
+                alt={tech.name}
+                className="h-12 w-12 object-contain group-hover:scale-110 transition-transform"
+              />
             </div>
           ))}
         </div>

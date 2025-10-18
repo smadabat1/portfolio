@@ -22,7 +22,7 @@ const About = () => {
           <div className="flex items-center gap-2 text-primary">
             <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
             <p className="font-medium">
-              Based in Hyderabad, India • Open to remote & global opportunities
+              Based in Hyderabad, India - Open to remote & global opportunities
             </p>
           </div>
         </div>
