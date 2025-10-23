@@ -199,7 +199,7 @@ export function TimelineDemo() {
         </div>
       ),
     },
-    {
+    /*{
       title: "2024",
       content: (
         <div>
@@ -216,7 +216,7 @@ export function TimelineDemo() {
           </p>
         </div>
       ),
-    },
+    },*/
     {
       title: "2023",
       content: (
